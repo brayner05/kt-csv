@@ -6,7 +6,7 @@ package csv
 class CSVReader(private val source: String) {
     private var tokenStart: Int = 0
     private var currentIdx: Int = 0
-    private var header: List<String> = readHeader()
+    private val header: List<String> = readHeader()
     private var inQuote: Boolean = false
 
     private fun readHeader(): List<String> {
